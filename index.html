@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDOejZG0aW9ZQU4k_fLgk5ZM8t48gXh4Gg",
+    authDomain: "quiz-b9ea1.firebaseapp.com",
+    projectId: "quiz-b9ea1",
+    storageBucket: "quiz-b9ea1.appspot.com",
+    messagingSenderId: "552332209152",
+    appId: "1:552332209152:web:501d0f2e3d90c651997ce5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="styles.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+  <title>Quiz App</title>
+</head>
+<body>
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+    </div>
+  </div>
+</body>
+</html>
